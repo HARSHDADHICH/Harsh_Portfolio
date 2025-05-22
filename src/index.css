@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Default Light Theme */
+    --bg-primary: theme('colors.slate.50');
+    --text-primary: theme('colors.slate.900');
+    --accent-primary: theme('colors.teal.600');
+  }
+
+  [data-theme='dark'] {
+    --bg-primary: theme('colors.slate.900');
+    --text-primary: theme('colors.slate.50');
+    --accent-primary: theme('colors.teal.400');
+  }
+
+  [data-theme='high-contrast'] {
+    --hc-bg: #000000;
+    --hc-text: #ffffff;
+    --hc-primary: #ffff00;
+  }
+
+  [data-theme='colorful'] {
+    --colorful-primary: #FF6B6B;
+    --colorful-secondary: #4ECDC4;
+    --colorful-accent: #45B7D1;
+  }
+
+  [data-theme='minimal'] {
+    --bg-primary: #ffffff;
+    --text-primary: #2c3e50;
+    --accent-primary: #34495e;
+  }
+
+  /* Apply theme variables */
+  body {
+    @apply transition-colors duration-200;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+}
+
+/* Theme-specific styles */
+
+[data-theme='high-contrast'] {
+  * {
+    @apply border-2;
+    border-color: var(--hc-text);
+  }
+
+  a,
+  button {
+    background-color: var(--hc-primary);
+    color: var(--hc-bg);
+  }
+}
+
+[data-theme='colorful'] {
+  .bg-teal-600 {
+    background-color: var(--colorful-primary);
+  }
+
+  .text-teal-600 {
+    color: var(--colorful-secondary);
+  }
+}
+
+[data-theme='minimal'] {
+  * {
+    @apply border-0 shadow-none;
+  }
+}

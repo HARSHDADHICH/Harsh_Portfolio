@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-medium text-slate-800">Email</h4>
                   <a href="mailto:your.email@example.com" className="text-slate-600 hover:text-teal-600 transition-colors">
-                    your.email@example.com
+                    harshmalpura@gmail.com
                   </a>
                 </div>
               </div>
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-medium text-slate-800">Phone</h4>
                   <a href="tel:+10123456789" className="text-slate-600 hover:text-teal-600 transition-colors">
-                    (012) 345-6789
+                    +917727936417
                   </a>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-medium text-slate-800">Location</h4>
                   <p className="text-slate-600">
-                    San Francisco, CA
+                    Jaipur,India
                     <br />
                     Available for remote work worldwide
                   </p>

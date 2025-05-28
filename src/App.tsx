@@ -27,7 +27,7 @@ function App() {
           <Contact />
         </main>
         <Footer />
-        <ThemeSelector />
+        {/* <ThemeSelector /> */}
       </div>
     </ThemeProvider>
   );

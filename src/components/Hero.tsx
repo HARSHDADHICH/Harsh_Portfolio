@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-3/5">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight">
-              Freelance Software Developer
+            Software Development Lead
             </h1>
             <h2 className="mt-4 text-xl md:text-2xl text-teal-600 font-medium">
               Building modern, efficient digital solutions
